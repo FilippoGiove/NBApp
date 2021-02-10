@@ -17,7 +17,7 @@ class TeamPlayersListViewModel {
     func setTeam(_ team:TeamModel){
         self.team = team
         if let teamID = self.team.id, let players = SynchManager.sharedInstance().playersToTeam[teamID],players.count > 0{
-            self.players = players
+            self.players = players.sorted(by: { $0.getFullname() < $1.getFullname() })
         }
         else{
             self.players = []

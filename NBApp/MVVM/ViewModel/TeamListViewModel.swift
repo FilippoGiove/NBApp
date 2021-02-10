@@ -10,5 +10,5 @@ import UIKit
 
 
 class TeamListViewModel {
-    var teams = SynchManager.sharedInstance().teams
+    var teams = SynchManager.sharedInstance().getSortedTeams()
 }

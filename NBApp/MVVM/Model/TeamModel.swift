@@ -31,5 +31,12 @@ public class TeamModel {
         self.name = name
   }
 
+    func getFullname()->String{
+        if (self.full_name ?? "").isEmpty{
+            return self.name ?? ""
+        }
+        return self.full_name!
+    }
+
 
 }

@@ -35,22 +35,22 @@ class PlayerViewController: UIViewController {
                 positionValueLabel.text = "NA"
             }
 
-            if let height_feet = model.height_feet, !height_feet.isEmpty{
-                heightFeetValueLabel.text = height_feet.uppercased()
+            if let height_feet = model.height_feet, height_feet > 0{
+                heightFeetValueLabel.text = "\(height_feet)".uppercased()
             }
             else{
                 heightFeetValueLabel.text = "NA"
             }
 
-            if let height_inches = model.height_inches, !height_inches.isEmpty{
-                heightInchesValueLabel.text = height_inches.uppercased()
+            if let height_inches = model.height_inches, height_inches > 0{
+                heightInchesValueLabel.text = "\(height_inches)".uppercased()
             }
             else{
                 heightInchesValueLabel.text = "NA"
             }
 
-            if let weight_pounds = model.weight_pounds, !weight_pounds.isEmpty{
-                weightPoundsValueLabel.text = weight_pounds.uppercased()
+            if let weight_pounds = model.weight_pounds, weight_pounds > 0{
+                weightPoundsValueLabel.text = "\(weight_pounds)".uppercased()
             }
             else{
                 weightPoundsValueLabel.text = "NA"

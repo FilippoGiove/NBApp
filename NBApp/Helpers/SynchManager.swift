@@ -25,6 +25,10 @@ class SynchManager: NSObject {
     var playersToTeam:[Int:[PlayerModel]]!
 
 
+
+    func getSortedTeams()->[TeamModel]{
+        return teams.sorted(by: { $0.getFullname() < $1.getFullname() })
+    }
     
 
 

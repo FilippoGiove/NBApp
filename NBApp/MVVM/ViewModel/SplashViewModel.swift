@@ -142,10 +142,10 @@ class SplashViewModel {
         let id = playerDictionary["id"] as? Int ?? -1
         let first_name = (playerDictionary["first_name"] as? String) ?? ""
         let last_name = playerDictionary["last_name"] as? String ?? ""
-        let height_feet = playerDictionary["height_feet"] as? String ?? ""
-        let height_inches = playerDictionary["height_inches"] as? String ?? ""
+        let height_feet = playerDictionary["height_feet"] as? Int ?? 0
+        let height_inches = playerDictionary["height_inches"] as? Int ?? 0
         let position = playerDictionary["position"] as? String ?? ""
-        let weight_pounds = playerDictionary["weight_pounds"] as? String ?? ""
+        let weight_pounds = playerDictionary["weight_pounds"] as? Int ?? 0
         return PlayerModel(id: id, first_name: first_name, last_name: last_name, height_feet: height_feet, height_inches: height_inches, position: position, weight_pounds: weight_pounds)
     }
 

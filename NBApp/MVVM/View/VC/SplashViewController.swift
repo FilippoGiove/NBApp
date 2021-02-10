@@ -25,9 +25,6 @@ class SplashViewController: UIViewController {
             guard let weakSelf = self else {return}
             if let progress = self?.viewModel.progress, progress > 0{
                 DispatchQueue.main.async {
-
-                    NSLog("progress-->%@ ","\(progress)%")
-
                     weakSelf.progressLabel.text = "\(progress)%"
                 }
             }

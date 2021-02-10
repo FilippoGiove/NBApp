@@ -12,19 +12,19 @@ public class PlayerModel {
     public var first_name: String?
     public var last_name:String?
 
-    public var height_feet:String?
-    public var height_inches:String?
+    public var height_feet:Int?
+    public var height_inches:Int?
     public var position:String?
-    public var weight_pounds:String?
+    public var weight_pounds:Int?
 
 
     public init(id:Int,
                 first_name:String,
                 last_name:String,
-                height_feet:String,
-                height_inches:String,
+                height_feet:Int,
+                height_inches:Int,
                 position:String,
-                weight_pounds:String) {
+                weight_pounds:Int) {
         self.id = id
         self.first_name = first_name
         self.last_name = last_name

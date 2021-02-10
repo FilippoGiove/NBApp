@@ -34,12 +34,12 @@ extension TeamListViewController:UICollectionViewDataSource,UICollectionViewDele
         1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.teams!.count
+        return viewModel.teams.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let index = indexPath.item
 
-        let model = self.viewModel.teams![index]
+        let model = self.viewModel.teams[index]
         let cell = collectionView
             .dequeueReusableCell(withReuseIdentifier: TeamCell.ReuseIndetifier, for: indexPath) as! TeamCell
         cell.initWithData(model: model)
@@ -68,7 +68,7 @@ extension TeamListViewController:UICollectionViewDataSource,UICollectionViewDele
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let index = indexPath.item
-        let model = self.viewModel.teams![index]
+        let model = self.viewModel.teams[index]
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TeamPlayersListViewController") as! TeamPlayersListViewController
         vc.viewModel = TeamPlayersListViewModel()
         vc.viewModel.setTeam(model)
