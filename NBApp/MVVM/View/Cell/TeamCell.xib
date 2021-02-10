@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TeamCell" id="gTV-IL-0wX" customClass="TeamCell" customModule="WiseEmotionsTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="392-oZ-Akm" customClass="Bold20Label" customModule="WiseEmotionsTest" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="540" height="80"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" name="PokemonBlueColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="hOi-Gr-6dw">
+                        <rect key="frame" x="560" y="40" width="30" height="30"/>
+                        <color key="tintColor" name="NBABlueColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="ehZ-PL-sS9"/>
+                            <constraint firstAttribute="width" constant="30" id="vOL-Px-dVQ"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="47d-wb-bj9">
+                        <rect key="frame" x="0.0" y="98" width="600" height="2"/>
+                        <color key="backgroundColor" name="NBARedColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="LRO-gw-meU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hOi-Gr-6dw" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="CoY-za-QG2"/>
+                <constraint firstAttribute="bottom" secondItem="392-oZ-Akm" secondAttribute="bottom" constant="10" id="E1k-lu-Wwz"/>
+                <constraint firstItem="47d-wb-bj9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HEJ-u9-aLM"/>
+                <constraint firstAttribute="trailing" secondItem="47d-wb-bj9" secondAttribute="trailing" id="J98-Dp-mMG"/>
+                <constraint firstItem="392-oZ-Akm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="OSW-Gz-Xrt"/>
+                <constraint firstAttribute="trailing" secondItem="hOi-Gr-6dw" secondAttribute="trailing" constant="10" id="ayy-lg-YGa"/>
+                <constraint firstItem="hOi-Gr-6dw" firstAttribute="leading" secondItem="392-oZ-Akm" secondAttribute="trailing" constant="10" id="cL1-Nd-ZwA"/>
+                <constraint firstItem="392-oZ-Akm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="dub-Ec-qVK"/>
+                <constraint firstAttribute="bottom" secondItem="47d-wb-bj9" secondAttribute="bottom" id="gnb-gK-anC"/>
+                <constraint firstAttribute="bottom" secondItem="392-oZ-Akm" secondAttribute="bottom" constant="10" id="t39-aq-27d"/>
+                <constraint firstItem="392-oZ-Akm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="vVa-b0-YcC"/>
+            </constraints>
+            <connections>
+                <outlet property="nameLabel" destination="392-oZ-Akm" id="sUW-gU-dTV"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="rightArrow" width="14" height="24"/>
+        <namedColor name="NBABlueColor">
+            <color red="0.0078431372549019607" green="0.32549019607843138" blue="0.64313725490196083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="NBARedColor">
+            <color red="0.80000000000000004" green="0.16862745098039217" blue="0.19215686274509805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PokemonBlueColor">
+            <color red="0.21568627450980393" green="0.38039215686274508" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,24 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MCn-U4-78k">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Team List View Controller-->
+        <scene sceneID="kme-ca-zpi">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="TeamListViewController" id="MCn-U4-78k" customClass="TeamListViewController" customModule="NBATest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f65-rn-ciE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fxi-nz-eFj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mHn-cF-SZa">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="MCn-U4-78k" id="hON-cz-JEg"/>
+                                    <outlet property="delegate" destination="MCn-U4-78k" id="woX-lk-Nzx"/>
+                                </connections>
+                            </collectionView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="KYL-PP-Tnu">
+                                <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                                <color key="tintColor" name="NBARedColor"/>
+                                <color key="color" name="NBARedColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="v8P-Xt-xoI"/>
+                        <color key="backgroundColor" name="NBABlueColor"/>
+                        <constraints>
+                            <constraint firstItem="v8P-Xt-xoI" firstAttribute="trailing" secondItem="fxi-nz-eFj" secondAttribute="trailing" id="Kc1-FB-MLj"/>
+                            <constraint firstItem="KYL-PP-Tnu" firstAttribute="centerX" secondItem="v8P-Xt-xoI" secondAttribute="centerX" id="N2U-Kh-obK"/>
+                            <constraint firstItem="v8P-Xt-xoI" firstAttribute="bottom" secondItem="fxi-nz-eFj" secondAttribute="bottom" id="SHc-3B-O1w"/>
+                            <constraint firstItem="fxi-nz-eFj" firstAttribute="leading" secondItem="v8P-Xt-xoI" secondAttribute="leading" id="XSU-Pn-Clk"/>
+                            <constraint firstItem="fxi-nz-eFj" firstAttribute="top" secondItem="v8P-Xt-xoI" secondAttribute="top" id="gw2-AG-9mD"/>
+                            <constraint firstItem="KYL-PP-Tnu" firstAttribute="centerY" secondItem="v8P-Xt-xoI" secondAttribute="centerY" id="thT-US-whO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="fxi-nz-eFj" id="wpS-s7-hln"/>
+                        <outlet property="loaderIndicator" destination="KYL-PP-Tnu" id="M5f-Pz-8Gc"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mMd-fK-Zqf" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-25" y="125"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="NBABlueColor">
+            <color red="0.0078431372549019607" green="0.32549019607843138" blue="0.64313725490196083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="NBARedColor">
+            <color red="0.80000000000000004" green="0.16862745098039217" blue="0.19215686274509805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

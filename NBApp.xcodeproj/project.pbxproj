@@ -8,13 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		EE6170F625D3F77E009D42F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6170F525D3F77E009D42F8 /* AppDelegate.swift */; };
-		EE6170F825D3F77E009D42F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6170F725D3F77E009D42F8 /* SceneDelegate.swift */; };
-		EE6170FA25D3F77E009D42F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6170F925D3F77E009D42F8 /* ViewController.swift */; };
 		EE6170FD25D3F77E009D42F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6170FB25D3F77E009D42F8 /* Main.storyboard */; };
-		EE6170FF25D3F77F009D42F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE6170FE25D3F77F009D42F8 /* Assets.xcassets */; };
 		EE61710225D3F77F009D42F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE61710025D3F77F009D42F8 /* LaunchScreen.storyboard */; };
 		EE61710D25D3F77F009D42F8 /* NBAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61710C25D3F77F009D42F8 /* NBAppTests.swift */; };
 		EE61711825D3F77F009D42F8 /* NBAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61711725D3F77F009D42F8 /* NBAppUITests.swift */; };
+		EE61714E25D3F793009D42F8 /* TeamListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61712A25D3F793009D42F8 /* TeamListViewModel.swift */; };
+		EE61715025D3F793009D42F8 /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61712D25D3F793009D42F8 /* TeamModel.swift */; };
+		EE61715325D3F793009D42F8 /* TeamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE61713225D3F793009D42F8 /* TeamCell.xib */; };
+		EE61715425D3F793009D42F8 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61713325D3F793009D42F8 /* TeamCell.swift */; };
+		EE61715525D3F793009D42F8 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61713525D3F793009D42F8 /* CustomLabel.swift */; };
+		EE61715625D3F793009D42F8 /* TeamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61713725D3F793009D42F8 /* TeamListViewController.swift */; };
+		EE61715725D3F793009D42F8 /* TeamPlayersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61713825D3F793009D42F8 /* TeamPlayersListViewController.swift */; };
+		EE61715825D3F793009D42F8 /* GothamRounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE61713A25D3F793009D42F8 /* GothamRounded-Medium.otf */; };
+		EE61715925D3F793009D42F8 /* GothamRounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE61713B25D3F793009D42F8 /* GothamRounded-Bold.otf */; };
+		EE61715A25D3F793009D42F8 /* GothamRounded-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE61713C25D3F793009D42F8 /* GothamRounded-Book.otf */; };
+		EE61715B25D3F793009D42F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61713E25D3F793009D42F8 /* Constants.swift */; };
+		EE61715C25D3F793009D42F8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61713F25D3F793009D42F8 /* Utilities.swift */; };
+		EE61715D25D3F793009D42F8 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714125D3F793009D42F8 /* UIFontExtension.swift */; };
+		EE61715E25D3F793009D42F8 /* CommonLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714325D3F793009D42F8 /* CommonLabels.swift */; };
+		EE61715F25D3F793009D42F8 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714425D3F793009D42F8 /* Reachability.swift */; };
+		EE61716025D3F793009D42F8 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714625D3F793009D42F8 /* Placeholder.swift */; };
+		EE61716125D3F793009D42F8 /* ThemeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714725D3F793009D42F8 /* ThemeUtils.swift */; };
+		EE61716225D3F793009D42F8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714825D3F793009D42F8 /* Utils.swift */; };
+		EE61716325D3F793009D42F8 /* FontConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714A25D3F793009D42F8 /* FontConvertible.swift */; };
+		EE61716425D3F793009D42F8 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714B25D3F793009D42F8 /* Fonts.swift */; };
+		EE61716525D3F793009D42F8 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714C25D3F793009D42F8 /* CustomFont.swift */; };
+		EE61717025D3F813009D42F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE61716F25D3F813009D42F8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +56,7 @@
 /* Begin PBXFileReference section */
 		EE6170F225D3F77E009D42F8 /* NBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE6170F525D3F77E009D42F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE6170F725D3F77E009D42F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE6170F925D3F77E009D42F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE6170FC25D3F77E009D42F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EE6170FE25D3F77F009D42F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE61710125D3F77F009D42F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE61710325D3F77F009D42F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE61710825D3F77F009D42F8 /* NBAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +65,28 @@
 		EE61711325D3F77F009D42F8 /* NBAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE61711725D3F77F009D42F8 /* NBAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAppUITests.swift; sourceTree = "<group>"; };
 		EE61711925D3F77F009D42F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE61712A25D3F793009D42F8 /* TeamListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamListViewModel.swift; sourceTree = "<group>"; };
+		EE61712D25D3F793009D42F8 /* TeamModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
+		EE61713225D3F793009D42F8 /* TeamCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeamCell.xib; sourceTree = "<group>"; };
+		EE61713325D3F793009D42F8 /* TeamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
+		EE61713525D3F793009D42F8 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		EE61713725D3F793009D42F8 /* TeamListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamListViewController.swift; sourceTree = "<group>"; };
+		EE61713825D3F793009D42F8 /* TeamPlayersListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamPlayersListViewController.swift; sourceTree = "<group>"; };
+		EE61713A25D3F793009D42F8 /* GothamRounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Medium.otf"; sourceTree = "<group>"; };
+		EE61713B25D3F793009D42F8 /* GothamRounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Bold.otf"; sourceTree = "<group>"; };
+		EE61713C25D3F793009D42F8 /* GothamRounded-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Book.otf"; sourceTree = "<group>"; };
+		EE61713E25D3F793009D42F8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EE61713F25D3F793009D42F8 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		EE61714125D3F793009D42F8 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		EE61714325D3F793009D42F8 /* CommonLabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonLabels.swift; sourceTree = "<group>"; };
+		EE61714425D3F793009D42F8 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		EE61714625D3F793009D42F8 /* Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
+		EE61714725D3F793009D42F8 /* ThemeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeUtils.swift; sourceTree = "<group>"; };
+		EE61714825D3F793009D42F8 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		EE61714A25D3F793009D42F8 /* FontConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontConvertible.swift; sourceTree = "<group>"; };
+		EE61714B25D3F793009D42F8 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		EE61714C25D3F793009D42F8 /* CustomFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		EE61716F25D3F813009D42F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +137,13 @@
 		EE6170F425D3F77E009D42F8 /* NBApp */ = {
 			isa = PBXGroup;
 			children = (
+				EE61716F25D3F813009D42F8 /* Assets.xcassets */,
+				EE61713D25D3F793009D42F8 /* Common */,
+				EE61714D25D3F793009D42F8 /* Helpers */,
+				EE61712825D3F793009D42F8 /* MVVM */,
+				EE61713925D3F793009D42F8 /* Resources */,
 				EE6170F525D3F77E009D42F8 /* AppDelegate.swift */,
-				EE6170F725D3F77E009D42F8 /* SceneDelegate.swift */,
-				EE6170F925D3F77E009D42F8 /* ViewController.swift */,
 				EE6170FB25D3F77E009D42F8 /* Main.storyboard */,
-				EE6170FE25D3F77F009D42F8 /* Assets.xcassets */,
 				EE61710025D3F77F009D42F8 /* LaunchScreen.storyboard */,
 				EE61710325D3F77F009D42F8 /* Info.plist */,
 			);
@@ -126,6 +166,135 @@
 				EE61711925D3F77F009D42F8 /* Info.plist */,
 			);
 			path = NBAppUITests;
+			sourceTree = "<group>";
+		};
+		EE61712825D3F793009D42F8 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				EE61712925D3F793009D42F8 /* ViewModel */,
+				EE61712C25D3F793009D42F8 /* Model */,
+				EE61712E25D3F793009D42F8 /* View */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		EE61712925D3F793009D42F8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EE61712A25D3F793009D42F8 /* TeamListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EE61712C25D3F793009D42F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE61712D25D3F793009D42F8 /* TeamModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE61712E25D3F793009D42F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE61712F25D3F793009D42F8 /* Cell */,
+				EE61713425D3F793009D42F8 /* Common */,
+				EE61713625D3F793009D42F8 /* VC */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE61712F25D3F793009D42F8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EE61713225D3F793009D42F8 /* TeamCell.xib */,
+				EE61713325D3F793009D42F8 /* TeamCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EE61713425D3F793009D42F8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EE61713525D3F793009D42F8 /* CustomLabel.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EE61713625D3F793009D42F8 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EE61713725D3F793009D42F8 /* TeamListViewController.swift */,
+				EE61713825D3F793009D42F8 /* TeamPlayersListViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		EE61713925D3F793009D42F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE61713A25D3F793009D42F8 /* GothamRounded-Medium.otf */,
+				EE61713B25D3F793009D42F8 /* GothamRounded-Bold.otf */,
+				EE61713C25D3F793009D42F8 /* GothamRounded-Book.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE61713D25D3F793009D42F8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EE61713E25D3F793009D42F8 /* Constants.swift */,
+				EE61713F25D3F793009D42F8 /* Utilities.swift */,
+				EE61714025D3F793009D42F8 /* Extension */,
+				EE61714225D3F793009D42F8 /* Label */,
+				EE61714425D3F793009D42F8 /* Reachability.swift */,
+				EE61714525D3F793009D42F8 /* Theme */,
+				EE61714825D3F793009D42F8 /* Utils.swift */,
+				EE61714925D3F793009D42F8 /* Font */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EE61714025D3F793009D42F8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EE61714125D3F793009D42F8 /* UIFontExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EE61714225D3F793009D42F8 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				EE61714325D3F793009D42F8 /* CommonLabels.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		EE61714525D3F793009D42F8 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				EE61714625D3F793009D42F8 /* Placeholder.swift */,
+				EE61714725D3F793009D42F8 /* ThemeUtils.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		EE61714925D3F793009D42F8 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EE61714A25D3F793009D42F8 /* FontConvertible.swift */,
+				EE61714B25D3F793009D42F8 /* Fonts.swift */,
+				EE61714C25D3F793009D42F8 /* CustomFont.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		EE61714D25D3F793009D42F8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +400,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE61715A25D3F793009D42F8 /* GothamRounded-Book.otf in Resources */,
+				EE61715825D3F793009D42F8 /* GothamRounded-Medium.otf in Resources */,
+				EE61715325D3F793009D42F8 /* TeamCell.xib in Resources */,
+				EE61715925D3F793009D42F8 /* GothamRounded-Bold.otf in Resources */,
+				EE61717025D3F813009D42F8 /* Assets.xcassets in Resources */,
 				EE61710225D3F77F009D42F8 /* LaunchScreen.storyboard in Resources */,
-				EE6170FF25D3F77F009D42F8 /* Assets.xcassets in Resources */,
 				EE6170FD25D3F77E009D42F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +431,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE6170FA25D3F77E009D42F8 /* ViewController.swift in Sources */,
+				EE61715625D3F793009D42F8 /* TeamListViewController.swift in Sources */,
+				EE61715D25D3F793009D42F8 /* UIFontExtension.swift in Sources */,
+				EE61716325D3F793009D42F8 /* FontConvertible.swift in Sources */,
+				EE61715C25D3F793009D42F8 /* Utilities.swift in Sources */,
+				EE61715525D3F793009D42F8 /* CustomLabel.swift in Sources */,
+				EE61714E25D3F793009D42F8 /* TeamListViewModel.swift in Sources */,
+				EE61715F25D3F793009D42F8 /* Reachability.swift in Sources */,
+				EE61716425D3F793009D42F8 /* Fonts.swift in Sources */,
+				EE61715725D3F793009D42F8 /* TeamPlayersListViewController.swift in Sources */,
+				EE61715025D3F793009D42F8 /* TeamModel.swift in Sources */,
 				EE6170F625D3F77E009D42F8 /* AppDelegate.swift in Sources */,
-				EE6170F825D3F77E009D42F8 /* SceneDelegate.swift in Sources */,
+				EE61716525D3F793009D42F8 /* CustomFont.swift in Sources */,
+				EE61715E25D3F793009D42F8 /* CommonLabels.swift in Sources */,
+				EE61715B25D3F793009D42F8 /* Constants.swift in Sources */,
+				EE61716225D3F793009D42F8 /* Utils.swift in Sources */,
+				EE61716125D3F793009D42F8 /* ThemeUtils.swift in Sources */,
+				EE61715425D3F793009D42F8 /* TeamCell.swift in Sources */,
+				EE61716025D3F793009D42F8 /* Placeholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +627,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J7BFLD66KP;
 				INFOPLIST_FILE = NBApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +647,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J7BFLD66KP;
 				INFOPLIST_FILE = NBApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
