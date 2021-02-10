@@ -11,7 +11,6 @@ import UIKit
 // MARK: - Model
 public class TeamModel {
 
-
     public var id: Int?
     public var abbreviation: String?
 
@@ -20,8 +19,6 @@ public class TeamModel {
     public var division:String?
     public var full_name:String?
     public var name:String?
-
-
 
 
     public init(id:Int,abbreviation:String,city:String,conference:String,division:String,full_name:String,name:String) {
@@ -33,4 +30,6 @@ public class TeamModel {
         self.full_name = full_name
         self.name = name
   }
+
+
 }

@@ -2,7 +2,7 @@
 //  TeamListViewController.swift
 //  NBATest
 //
-//  Created by Filippo Giove on 25/09/2020.
+//  Created by Filippo Giove on 10/02/2021.
 //  Copyright © 2020 Filippo Giove. All rights reserved.
 //
 
@@ -16,6 +16,7 @@ class TeamListViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
 
     override func viewDidLoad() {
+        self.title = "TEAM"
         self.collectionView.register(UINib(nibName: "TeamCell", bundle: nil), forCellWithReuseIdentifier: TeamCell.ReuseIndetifier)
         viewModel.teams.bind { [weak self] _ in
             DispatchQueue.main.async {
@@ -75,10 +76,13 @@ extension TeamListViewController:UICollectionViewDataSource,UICollectionViewDele
 
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        /*let index = indexPath.item
+        let index = indexPath.item
         let model = self.viewModel.teams.value[index]
-        let vcDetails = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TeamDetailsViewController") as! TeamDetailsViewController
-        vcDetails.viewModel = TeamDetailViewModel(of: model)
-        self.present(vcDetails, animated: true, completion: nil)*/
+        let vcDetails = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TeamPlayersListViewController") as! TeamPlayersListViewController
+        vcDetails.viewModel = TeamPlayersListViewModel()
+        vcDetails.viewModel.setTeam(model)
+        NSLog("PUSH!!!")
+        self.navigationController?.pushViewController(vcDetails, animated: true)
+
     }
 }

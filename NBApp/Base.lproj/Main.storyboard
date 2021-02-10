@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MCn-U4-78k">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xUa-WW-vAP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -12,13 +12,13 @@
         <!--Team List View Controller-->
         <scene sceneID="kme-ca-zpi">
             <objects>
-                <viewController storyboardIdentifier="TeamListViewController" id="MCn-U4-78k" customClass="TeamListViewController" customModule="NBATest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TeamListViewController" id="MCn-U4-78k" customClass="TeamListViewController" customModule="NBApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f65-rn-ciE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fxi-nz-eFj">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mHn-cF-SZa">
                                     <size key="itemSize" width="128" height="128"/>
@@ -33,7 +33,7 @@
                                 </connections>
                             </collectionView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="KYL-PP-Tnu">
-                                <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                                <rect key="frame" x="188.5" y="368.5" width="37" height="37"/>
                                 <color key="tintColor" name="NBARedColor"/>
                                 <color key="color" name="NBARedColor"/>
                             </activityIndicatorView>
@@ -49,6 +49,7 @@
                             <constraint firstItem="KYL-PP-Tnu" firstAttribute="centerY" secondItem="v8P-Xt-xoI" secondAttribute="centerY" id="thT-US-whO"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="SIC-9d-Z64"/>
                     <connections>
                         <outlet property="collectionView" destination="fxi-nz-eFj" id="wpS-s7-hln"/>
                         <outlet property="loaderIndicator" destination="KYL-PP-Tnu" id="M5f-Pz-8Gc"/>
@@ -56,10 +57,105 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mMd-fK-Zqf" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-25" y="125"/>
+            <point key="canvasLocation" x="771" y="757"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="3WN-RY-0lR">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="xUa-WW-vAP" customClass="SplashViewController" customModule="NBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qCR-mL-0qm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_nba" translatesAutoresizingMaskIntoConstraints="NO" id="K7J-rl-une">
+                                <rect key="frame" x="87" y="229" width="240" height="448"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="32I-gX-VsF">
+                                <rect key="frame" x="188.5" y="805" width="37" height="37"/>
+                                <color key="color" name="NBARedColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nUm-aF-IuC"/>
+                        <color key="backgroundColor" name="NBABlueColor"/>
+                        <constraints>
+                            <constraint firstItem="nUm-aF-IuC" firstAttribute="bottom" secondItem="32I-gX-VsF" secondAttribute="bottom" constant="20" id="8De-9U-l77"/>
+                            <constraint firstItem="K7J-rl-une" firstAttribute="centerY" secondItem="nUm-aF-IuC" secondAttribute="centerY" id="Y3c-9A-3i0"/>
+                            <constraint firstItem="K7J-rl-une" firstAttribute="centerX" secondItem="nUm-aF-IuC" secondAttribute="centerX" id="gYK-N5-g7Z"/>
+                            <constraint firstItem="K7J-rl-une" firstAttribute="width" secondItem="qCR-mL-0qm" secondAttribute="width" multiplier="0.57971" id="psH-1d-HES"/>
+                            <constraint firstItem="32I-gX-VsF" firstAttribute="centerX" secondItem="nUm-aF-IuC" secondAttribute="centerX" id="qHi-ox-gtC"/>
+                            <constraint firstItem="K7J-rl-une" firstAttribute="height" secondItem="qCR-mL-0qm" secondAttribute="height" multiplier="0.5" id="vyl-Jx-1b4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ey3-vr-4TK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-823" y="131"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="V20-KM-WWq">
+            <objects>
+                <navigationController storyboardIdentifier="NavTeamListViewController" automaticallyAdjustsScrollViewInsets="NO" id="BDB-tO-01u" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="hHB-MQ-1e1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="NBABlueColor"/>
+                        <color key="tintColor" name="NBABlueColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MCn-U4-78k" kind="relationship" relationship="rootViewController" id="yvE-qU-KWu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rRv-3A-D92" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="124.55357142857142"/>
+        </scene>
+        <!--Team Players List View Controller-->
+        <scene sceneID="jNd-KF-J7d">
+            <objects>
+                <viewController storyboardIdentifier="TeamPlayersListViewController" id="Mnw-xM-AaQ" customClass="TeamPlayersListViewController" customModule="NBApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HQA-qR-GnD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rS4-YO-1Xj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uhw-NC-rQK">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Mnw-xM-AaQ" id="AxF-eI-aeQ"/>
+                                    <outlet property="delegate" destination="Mnw-xM-AaQ" id="Rpy-i7-Pi1"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="z49-WW-hiq"/>
+                        <color key="backgroundColor" name="NBABlueColor"/>
+                        <constraints>
+                            <constraint firstItem="rS4-YO-1Xj" firstAttribute="leading" secondItem="z49-WW-hiq" secondAttribute="leading" id="2w8-aQ-g6g"/>
+                            <constraint firstItem="z49-WW-hiq" firstAttribute="trailing" secondItem="rS4-YO-1Xj" secondAttribute="trailing" id="Ebz-ag-Jrb"/>
+                            <constraint firstItem="z49-WW-hiq" firstAttribute="bottom" secondItem="rS4-YO-1Xj" secondAttribute="bottom" id="FpQ-8k-XkR"/>
+                            <constraint firstItem="rS4-YO-1Xj" firstAttribute="top" secondItem="z49-WW-hiq" secondAttribute="top" id="iZZ-n1-ISc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eMf-mO-LAM"/>
+                    <connections>
+                        <outlet property="collectionView" destination="rS4-YO-1Xj" id="PoR-sQ-wpB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uS9-Xx-J8P" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2133" y="463"/>
         </scene>
     </scenes>
     <resources>
+        <image name="logo_nba" width="333" height="333"/>
         <namedColor name="NBABlueColor">
             <color red="0.0078431372549019607" green="0.32549019607843138" blue="0.64313725490196083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

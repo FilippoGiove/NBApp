@@ -34,6 +34,13 @@
 		EE61716425D3F793009D42F8 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714B25D3F793009D42F8 /* Fonts.swift */; };
 		EE61716525D3F793009D42F8 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714C25D3F793009D42F8 /* CustomFont.swift */; };
 		EE61717025D3F813009D42F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE61716F25D3F813009D42F8 /* Assets.xcassets */; };
+		EE61722725D41C2B009D42F8 /* TeamPlayersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61722625D41C2B009D42F8 /* TeamPlayersListViewModel.swift */; };
+		EE61722C25D41E40009D42F8 /* SynchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61722B25D41E40009D42F8 /* SynchManager.swift */; };
+		EE61724025D41EEB009D42F8 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61723F25D41EEB009D42F8 /* PlayerModel.swift */; };
+		EE61724525D42809009D42F8 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61724425D42809009D42F8 /* SplashViewController.swift */; };
+		EE61724A25D42834009D42F8 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61724925D42834009D42F8 /* SplashViewModel.swift */; };
+		EE61725625D43107009D42F8 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61725425D43107009D42F8 /* PlayerCell.swift */; };
+		EE61725725D43107009D42F8 /* PlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE61725525D43107009D42F8 /* PlayerCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +94,13 @@
 		EE61714B25D3F793009D42F8 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		EE61714C25D3F793009D42F8 /* CustomFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		EE61716F25D3F813009D42F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE61722625D41C2B009D42F8 /* TeamPlayersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamPlayersListViewModel.swift; sourceTree = "<group>"; };
+		EE61722B25D41E40009D42F8 /* SynchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchManager.swift; sourceTree = "<group>"; };
+		EE61723F25D41EEB009D42F8 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		EE61724425D42809009D42F8 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		EE61724925D42834009D42F8 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		EE61725425D43107009D42F8 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		EE61725525D43107009D42F8 /* PlayerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				EE61712A25D3F793009D42F8 /* TeamListViewModel.swift */,
+				EE61722625D41C2B009D42F8 /* TeamPlayersListViewModel.swift */,
+				EE61724925D42834009D42F8 /* SplashViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -190,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				EE61712D25D3F793009D42F8 /* TeamModel.swift */,
+				EE61723F25D41EEB009D42F8 /* PlayerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,6 +226,8 @@
 			children = (
 				EE61713225D3F793009D42F8 /* TeamCell.xib */,
 				EE61713325D3F793009D42F8 /* TeamCell.swift */,
+				EE61725425D43107009D42F8 /* PlayerCell.swift */,
+				EE61725525D43107009D42F8 /* PlayerCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -226,6 +245,7 @@
 			children = (
 				EE61713725D3F793009D42F8 /* TeamListViewController.swift */,
 				EE61713825D3F793009D42F8 /* TeamPlayersListViewController.swift */,
+				EE61724425D42809009D42F8 /* SplashViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -293,6 +313,7 @@
 		EE61714D25D3F793009D42F8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				EE61722B25D41E40009D42F8 /* SynchManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -404,6 +425,7 @@
 				EE61715825D3F793009D42F8 /* GothamRounded-Medium.otf in Resources */,
 				EE61715325D3F793009D42F8 /* TeamCell.xib in Resources */,
 				EE61715925D3F793009D42F8 /* GothamRounded-Bold.otf in Resources */,
+				EE61725725D43107009D42F8 /* PlayerCell.xib in Resources */,
 				EE61717025D3F813009D42F8 /* Assets.xcassets in Resources */,
 				EE61710225D3F77F009D42F8 /* LaunchScreen.storyboard in Resources */,
 				EE6170FD25D3F77E009D42F8 /* Main.storyboard in Resources */,
@@ -431,11 +453,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE61725625D43107009D42F8 /* PlayerCell.swift in Sources */,
 				EE61715625D3F793009D42F8 /* TeamListViewController.swift in Sources */,
 				EE61715D25D3F793009D42F8 /* UIFontExtension.swift in Sources */,
 				EE61716325D3F793009D42F8 /* FontConvertible.swift in Sources */,
+				EE61722725D41C2B009D42F8 /* TeamPlayersListViewModel.swift in Sources */,
 				EE61715C25D3F793009D42F8 /* Utilities.swift in Sources */,
 				EE61715525D3F793009D42F8 /* CustomLabel.swift in Sources */,
+				EE61724025D41EEB009D42F8 /* PlayerModel.swift in Sources */,
 				EE61714E25D3F793009D42F8 /* TeamListViewModel.swift in Sources */,
 				EE61715F25D3F793009D42F8 /* Reachability.swift in Sources */,
 				EE61716425D3F793009D42F8 /* Fonts.swift in Sources */,
@@ -443,12 +468,15 @@
 				EE61715025D3F793009D42F8 /* TeamModel.swift in Sources */,
 				EE6170F625D3F77E009D42F8 /* AppDelegate.swift in Sources */,
 				EE61716525D3F793009D42F8 /* CustomFont.swift in Sources */,
+				EE61722C25D41E40009D42F8 /* SynchManager.swift in Sources */,
 				EE61715E25D3F793009D42F8 /* CommonLabels.swift in Sources */,
 				EE61715B25D3F793009D42F8 /* Constants.swift in Sources */,
 				EE61716225D3F793009D42F8 /* Utils.swift in Sources */,
 				EE61716125D3F793009D42F8 /* ThemeUtils.swift in Sources */,
 				EE61715425D3F793009D42F8 /* TeamCell.swift in Sources */,
 				EE61716025D3F793009D42F8 /* Placeholder.swift in Sources */,
+				EE61724A25D42834009D42F8 /* SplashViewModel.swift in Sources */,
+				EE61724525D42809009D42F8 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
