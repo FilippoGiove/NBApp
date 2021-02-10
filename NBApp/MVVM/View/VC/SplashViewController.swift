@@ -11,13 +11,27 @@ class SplashViewController: UIViewController {
 
     var viewModel = SplashViewModel()
 
-
+    @IBOutlet weak var progressLabel: UILabel!
+    
     override func viewDidLoad() {
+        self.progressLabel.text = ""
+        self.progressLabel.textColor = UIColor.white
         viewModel.synch()
         configureViewModel()
     }
 
     func configureViewModel(){
+        viewModel.updateProgressLabelClosure = {[weak self] in
+            guard let weakSelf = self else {return}
+            if let progress = self?.viewModel.progress, progress > 0{
+                DispatchQueue.main.async {
+
+                    NSLog("progress-->%@ ","\(progress)%")
+
+                    weakSelf.progressLabel.text = "\(progress)%"
+                }
+            }
+        }
         viewModel.itemFetchedClosure = {[weak self] in
             guard let weakSelf = self else {return}
 

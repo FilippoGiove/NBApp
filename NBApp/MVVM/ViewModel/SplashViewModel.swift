@@ -25,7 +25,25 @@ class SplashViewModel {
     var showOrHideLoaderClosure:(() -> ())?
 
 
-    var actualPageIndex = 0
+    var totalPages = 0
+    var actualPageIndex = 0{
+        didSet {
+            if actualPageIndex > 0 &&  totalPages > 0{
+                let floatR:Float =  Float(((actualPageIndex * 100 ) / totalPages))
+                self.progress = Int(floatR)
+            }
+        }
+    }
+
+    var progress:Int?{
+        didSet {
+            if let progress = progress, progress > 0 {
+                self.updateProgressLabelClosure?()
+            }
+        }
+    }
+    var updateProgressLabelClosure:(() -> ())?
+
 
     public func synch() {
         SynchManager.sharedInstance().teams = []
@@ -35,7 +53,7 @@ class SplashViewModel {
 
 
     func nextPage(page:Int){
-        NSLog("DOWNLOAD PAGE #%d",page)
+        self.actualPageIndex = page
         let session = URLSession.shared
         var urlComponents = URLComponents(string: ALL_PLAYERS_LIST_API)!
         let parameters = ["page": "\(page)", "per_page" : "100"]
@@ -88,16 +106,17 @@ class SplashViewModel {
                                let current_page = meta["current_page"] as? Int,
                                let next_page = meta["next_page"] as? Int,
                                current_page < total_pages{
+                                if(self.totalPages == 0){
+                                    self.totalPages = total_pages
+                                }
                                 self.nextPage(page: next_page)
                             }
                             else{
-                                NSLog("itemFetched!!!!")
                                 self.itemFetched = true
                             }
 
                         }
                     } catch {
-                        print ("Something Went Wrong")
                         self.itemFetched = false
                     }
             }

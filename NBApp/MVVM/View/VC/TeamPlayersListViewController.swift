@@ -73,11 +73,12 @@ extension TeamPlayersListViewController:UICollectionViewDataSource,UICollectionV
 
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        /*let index = indexPath.item
-        let model = self.viewModel.teams.value[index]
-        let vcDetails = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TeamDetailsViewController") as! TeamDetailsViewController
-        vcDetails.viewModel = TeamDetailViewModel(of: model)
-        self.present(vcDetails, animated: true, completion: nil)*/
+        let index = indexPath.item
+        let model = self.viewModel.players![index]
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PlayerViewController") as! PlayerViewController
+        vc.viewModel = PlayerViewModel()
+        vc.viewModel.setPlayer(model)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

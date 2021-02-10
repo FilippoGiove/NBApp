@@ -10,7 +10,6 @@ class TeamPlayersListViewModel {
     var team:TeamModel!
     var players:[PlayerModel]!
 
-    // MARK: - Initialization
     init(){
 
     }

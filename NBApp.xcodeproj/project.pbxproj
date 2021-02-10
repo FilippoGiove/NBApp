@@ -16,7 +16,6 @@
 		EE61715025D3F793009D42F8 /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61712D25D3F793009D42F8 /* TeamModel.swift */; };
 		EE61715325D3F793009D42F8 /* TeamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE61713225D3F793009D42F8 /* TeamCell.xib */; };
 		EE61715425D3F793009D42F8 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61713325D3F793009D42F8 /* TeamCell.swift */; };
-		EE61715525D3F793009D42F8 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61713525D3F793009D42F8 /* CustomLabel.swift */; };
 		EE61715625D3F793009D42F8 /* TeamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61713725D3F793009D42F8 /* TeamListViewController.swift */; };
 		EE61715725D3F793009D42F8 /* TeamPlayersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61713825D3F793009D42F8 /* TeamPlayersListViewController.swift */; };
 		EE61715825D3F793009D42F8 /* GothamRounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EE61713A25D3F793009D42F8 /* GothamRounded-Medium.otf */; };
@@ -25,10 +24,7 @@
 		EE61715B25D3F793009D42F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61713E25D3F793009D42F8 /* Constants.swift */; };
 		EE61715C25D3F793009D42F8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61713F25D3F793009D42F8 /* Utilities.swift */; };
 		EE61715D25D3F793009D42F8 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714125D3F793009D42F8 /* UIFontExtension.swift */; };
-		EE61715E25D3F793009D42F8 /* CommonLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714325D3F793009D42F8 /* CommonLabels.swift */; };
 		EE61715F25D3F793009D42F8 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714425D3F793009D42F8 /* Reachability.swift */; };
-		EE61716025D3F793009D42F8 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714625D3F793009D42F8 /* Placeholder.swift */; };
-		EE61716125D3F793009D42F8 /* ThemeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714725D3F793009D42F8 /* ThemeUtils.swift */; };
 		EE61716225D3F793009D42F8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714825D3F793009D42F8 /* Utils.swift */; };
 		EE61716325D3F793009D42F8 /* FontConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714A25D3F793009D42F8 /* FontConvertible.swift */; };
 		EE61716425D3F793009D42F8 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61714B25D3F793009D42F8 /* Fonts.swift */; };
@@ -41,6 +37,8 @@
 		EE61724A25D42834009D42F8 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61724925D42834009D42F8 /* SplashViewModel.swift */; };
 		EE61725625D43107009D42F8 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61725425D43107009D42F8 /* PlayerCell.swift */; };
 		EE61725725D43107009D42F8 /* PlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE61725525D43107009D42F8 /* PlayerCell.xib */; };
+		EE61725C25D43AB0009D42F8 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61725B25D43AB0009D42F8 /* PlayerViewController.swift */; };
+		EE61726125D43BF2009D42F8 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61726025D43BF2009D42F8 /* PlayerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +74,6 @@
 		EE61712D25D3F793009D42F8 /* TeamModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
 		EE61713225D3F793009D42F8 /* TeamCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeamCell.xib; sourceTree = "<group>"; };
 		EE61713325D3F793009D42F8 /* TeamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
-		EE61713525D3F793009D42F8 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		EE61713725D3F793009D42F8 /* TeamListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamListViewController.swift; sourceTree = "<group>"; };
 		EE61713825D3F793009D42F8 /* TeamPlayersListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamPlayersListViewController.swift; sourceTree = "<group>"; };
 		EE61713A25D3F793009D42F8 /* GothamRounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRounded-Medium.otf"; sourceTree = "<group>"; };
@@ -85,10 +82,7 @@
 		EE61713E25D3F793009D42F8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EE61713F25D3F793009D42F8 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		EE61714125D3F793009D42F8 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
-		EE61714325D3F793009D42F8 /* CommonLabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonLabels.swift; sourceTree = "<group>"; };
 		EE61714425D3F793009D42F8 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		EE61714625D3F793009D42F8 /* Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
-		EE61714725D3F793009D42F8 /* ThemeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeUtils.swift; sourceTree = "<group>"; };
 		EE61714825D3F793009D42F8 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		EE61714A25D3F793009D42F8 /* FontConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontConvertible.swift; sourceTree = "<group>"; };
 		EE61714B25D3F793009D42F8 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -101,6 +95,8 @@
 		EE61724925D42834009D42F8 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		EE61725425D43107009D42F8 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		EE61725525D43107009D42F8 /* PlayerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerCell.xib; sourceTree = "<group>"; };
+		EE61725B25D43AB0009D42F8 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		EE61726025D43BF2009D42F8 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,8 +181,8 @@
 		EE61712825D3F793009D42F8 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				EE61712925D3F793009D42F8 /* ViewModel */,
 				EE61712C25D3F793009D42F8 /* Model */,
+				EE61712925D3F793009D42F8 /* ViewModel */,
 				EE61712E25D3F793009D42F8 /* View */,
 			);
 			path = MVVM;
@@ -198,6 +194,7 @@
 				EE61712A25D3F793009D42F8 /* TeamListViewModel.swift */,
 				EE61722625D41C2B009D42F8 /* TeamPlayersListViewModel.swift */,
 				EE61724925D42834009D42F8 /* SplashViewModel.swift */,
+				EE61726025D43BF2009D42F8 /* PlayerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -235,7 +232,6 @@
 		EE61713425D3F793009D42F8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				EE61713525D3F793009D42F8 /* CustomLabel.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -246,6 +242,7 @@
 				EE61713725D3F793009D42F8 /* TeamListViewController.swift */,
 				EE61713825D3F793009D42F8 /* TeamPlayersListViewController.swift */,
 				EE61724425D42809009D42F8 /* SplashViewController.swift */,
+				EE61725B25D43AB0009D42F8 /* PlayerViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -265,11 +262,9 @@
 			children = (
 				EE61713E25D3F793009D42F8 /* Constants.swift */,
 				EE61713F25D3F793009D42F8 /* Utilities.swift */,
-				EE61714025D3F793009D42F8 /* Extension */,
-				EE61714225D3F793009D42F8 /* Label */,
 				EE61714425D3F793009D42F8 /* Reachability.swift */,
-				EE61714525D3F793009D42F8 /* Theme */,
 				EE61714825D3F793009D42F8 /* Utils.swift */,
+				EE61714025D3F793009D42F8 /* Extension */,
 				EE61714925D3F793009D42F8 /* Font */,
 			);
 			path = Common;
@@ -281,23 +276,6 @@
 				EE61714125D3F793009D42F8 /* UIFontExtension.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		EE61714225D3F793009D42F8 /* Label */ = {
-			isa = PBXGroup;
-			children = (
-				EE61714325D3F793009D42F8 /* CommonLabels.swift */,
-			);
-			path = Label;
-			sourceTree = "<group>";
-		};
-		EE61714525D3F793009D42F8 /* Theme */ = {
-			isa = PBXGroup;
-			children = (
-				EE61714625D3F793009D42F8 /* Placeholder.swift */,
-				EE61714725D3F793009D42F8 /* ThemeUtils.swift */,
-			);
-			path = Theme;
 			sourceTree = "<group>";
 		};
 		EE61714925D3F793009D42F8 /* Font */ = {
@@ -459,7 +437,6 @@
 				EE61716325D3F793009D42F8 /* FontConvertible.swift in Sources */,
 				EE61722725D41C2B009D42F8 /* TeamPlayersListViewModel.swift in Sources */,
 				EE61715C25D3F793009D42F8 /* Utilities.swift in Sources */,
-				EE61715525D3F793009D42F8 /* CustomLabel.swift in Sources */,
 				EE61724025D41EEB009D42F8 /* PlayerModel.swift in Sources */,
 				EE61714E25D3F793009D42F8 /* TeamListViewModel.swift in Sources */,
 				EE61715F25D3F793009D42F8 /* Reachability.swift in Sources */,
@@ -467,14 +444,13 @@
 				EE61715725D3F793009D42F8 /* TeamPlayersListViewController.swift in Sources */,
 				EE61715025D3F793009D42F8 /* TeamModel.swift in Sources */,
 				EE6170F625D3F77E009D42F8 /* AppDelegate.swift in Sources */,
+				EE61725C25D43AB0009D42F8 /* PlayerViewController.swift in Sources */,
 				EE61716525D3F793009D42F8 /* CustomFont.swift in Sources */,
 				EE61722C25D41E40009D42F8 /* SynchManager.swift in Sources */,
-				EE61715E25D3F793009D42F8 /* CommonLabels.swift in Sources */,
+				EE61726125D43BF2009D42F8 /* PlayerViewModel.swift in Sources */,
 				EE61715B25D3F793009D42F8 /* Constants.swift in Sources */,
 				EE61716225D3F793009D42F8 /* Utils.swift in Sources */,
-				EE61716125D3F793009D42F8 /* ThemeUtils.swift in Sources */,
 				EE61715425D3F793009D42F8 /* TeamCell.swift in Sources */,
-				EE61716025D3F793009D42F8 /* Placeholder.swift in Sources */,
 				EE61724A25D42834009D42F8 /* SplashViewModel.swift in Sources */,
 				EE61724525D42809009D42F8 /* SplashViewController.swift in Sources */,
 			);
